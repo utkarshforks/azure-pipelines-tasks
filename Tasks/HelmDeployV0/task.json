@@ -183,7 +183,8 @@
                 "package": "package",
                 "rollback": "rollback",
                 "save": "save",
-                "upgrade": "upgrade"
+                "upgrade": "upgrade",
+                "custom": "custom"
             },
             "helpMarkDown": "Select a helm command.",
             "groupName": "commands",
@@ -365,6 +366,14 @@
             "helpMarkDown": "Block till command execution completes.",
             "visibleRule": "command == init || command == install || command == upgrade",
             "groupName": "commands"
+        },
+        {
+            "name": "customCommandName",
+            "type": "string",
+            "label": "Custom command name",
+            "helpMarkDown": "Custom command name. For example, uninstall",
+            "groupName": "commands",
+            "visibleRule": "command === custom"
         },
         {
             "name": "arguments",

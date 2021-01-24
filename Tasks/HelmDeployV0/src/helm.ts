@@ -148,7 +148,15 @@ function runHelm(helmCli: helmcli, command: string, kubectlCli: kubernetescli, f
     //set command
     if (command === "saveChart" || command === "pushChart" || command === "removeChart") {
         helmCli.setCommand("chart");
-    } else {
+    } if(command === "custom")
+    {
+        let customCommandName = tl.getInput("customCommandName");
+        if(customCommandName)
+        {
+            helmCli.setCommand(customCommandName);
+        }
+    }
+    else {
         helmCli.setCommand(command);
     }
 

@@ -64,6 +64,8 @@
   "loc.input.help.force": "Force resource update through delete/recreate if needed​",
   "loc.input.label.waitForExecution": "Wait",
   "loc.input.help.waitForExecution": "Block till command execution completes.",
+  "loc.input.label.customCommandName": "Custom command name",
+  "loc.input.help.customCommandName": "Custom command name. For example, uninstall",
   "loc.input.label.arguments": "Arguments",
   "loc.input.help.arguments": "Helm command options.",
   "loc.input.label.enableTls": "Enable TLS",

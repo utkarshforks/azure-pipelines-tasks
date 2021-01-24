@@ -183,7 +183,8 @@
         "package": "package",
         "rollback": "rollback",
         "save": "save",
-        "upgrade": "upgrade"
+        "upgrade": "upgrade",
+        "custom": "custom"
       },
       "helpMarkDown": "ms-resource:loc.input.help.command",
       "groupName": "commands",
@@ -365,6 +366,14 @@
       "helpMarkDown": "ms-resource:loc.input.help.waitForExecution",
       "visibleRule": "command == init || command == install || command == upgrade",
       "groupName": "commands"
+    },
+    {
+      "name": "customCommandName",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.customCommandName",
+      "helpMarkDown": "ms-resource:loc.input.help.customCommandName",
+      "groupName": "commands",
+      "visibleRule": "command === custom"
     },
     {
       "name": "arguments",
